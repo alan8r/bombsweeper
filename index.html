@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Bombsweeper</title>
+    <style>
+	canvas {
+	    display: block;
+	    margin: auto;
+	    border-right: solid 2px #333;
+	    border-bottom: solid 2px #333;
+	}
+	body {
+	    font-family: monospace;
+	    text-align: center;
+	}
+	p {
+	    display: block;
+	    margin: 0 auto;
+	    text-align: left;
+	    line-height: 20px;
+	    width: 220px;
+	}
+	i {
+	    font: .9em monospace;
+	    border: solid 1px #999;
+	    background-color: #CCC;
+	    border-radius: 5px;
+	    display: inline-block;
+	    text-align: center;
+	    width: 90px;
+	}
+    </style>
+</head>
+<body>
+    <big><big><big>Bombsweeper</big></big></big> <small>by alan8r</small><br />
+    New Game: <a href="#" id="easy">easy</a> | <a href="#" id="med">medium</a> | <a href="#" id="hard">hard</a>
+    <br /><br />
+    <canvas id="canvas"></canvas><br />
+    <b><u>Controls:</u></b><br />
+    <p>
+	<i>Left-Click</i> opens a block,
+	<i>Right-Click</i> flags a mine,
+	<i>Double-Click</i> open space to open a 3x3 <small>(limited by flags)</small>
+    </p>
+    <script src="main.js"></script>
+    <script src="render.js"></script>
+    <script src="mouse.js"></script>
+</body>
+</html>
